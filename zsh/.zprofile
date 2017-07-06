@@ -1,0 +1,5 @@
+# Start the gpg-agaent only once and exports it's env variable
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
+export EDITOR=vim
