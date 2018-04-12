@@ -1,0 +1,82 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 849,
+       "width": 1590,
+       "x": 0,
+       "y": 0
+    },
+    "name": "LiveShare - [~/AndroidStudioProjects/LiveShare] - [app] - ~/AndroidStudioProjects/LiveShare/app/src/main/res/layout/row_transfer_header.xml - Android Studio 3.0.1",
+    "percent": 0.681301513877208,
+    "swallows": [
+       {
+       // "class": "^jetbrains\\-studio$",
+       // "instance": "^sun\\-awt\\-X11\\-XFramePeer$",
+       // "title": "^LiveShare\\ \\-\\ \\[\\~\\/AndroidStudioProjects\\/LiveShare\\]\\ \\-\\ \\[app\\]\\ \\-\\ \\~\\/AndroidStudioProjects\\/LiveShare\\/app\\/src\\/main\\/res\\/layout\\/row_transfer_header\\.xml\\ \\-\\ Android\\ Studio\\ 3\\.0\\.1$",
+       // "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "none",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 684,
+       "width": 384,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Android Emulator - Nexus_5X_API_26:5554",
+    "percent": 0.318698486122792,
+    "swallows": [
+       {
+       // "title": "^Android\\ Emulator\\ \\-\\ Nexus_5X_API_26\\:5554$",
+       // "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // floating_con with 1 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "rect": {
+       "height": 512,
+       "width": 61,
+       "x": 1563,
+       "y": 0
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 2,
+            "floating": "user_on",
+            "geometry": {
+               "height": 512,
+               "width": 61,
+               "x": 371,
+               "y": 0
+            },
+            "name": "Emulator",
+            "percent": 1,
+            "swallows": [
+               {
+               // "title": "^Emulator$",
+               // "transient_for": "^44040194$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
