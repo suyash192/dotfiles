@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -30,7 +30,7 @@ font pango:DejaVuSansMono Nerd Font 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -e fish
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -180,4 +180,4 @@ assign [class="qBittorrent"] $ws10
 
 # Auto start apps
 exec firefox
-exec urxvt -e fish
+exec urxvt
