@@ -96,8 +96,8 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Terminals &#xf120;"
 set $ws2 "2: Web &#xf269;"
-set $ws3 "3: Code &#xf121;"
-set $ws4 "4"
+set $ws3 "3: Code &#xf668;"
+set $ws4 "4: Files &#xf752;"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -165,11 +165,31 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+p exec passmenu --type
 
+# class                 border  backgr. text    indicator child_border
+client.focused          #2b83a6 #2b83a6 #ffffff #dddddd   #2b83a6
+client.focused_inactive #212121 #212121 #86888c #292d2e   #5a5a5a
+client.unfocused        #212121 #212121 #86888c #292d2e   #5a5a5a
+client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
+client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
+client.background 	#212121
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3status
 	font pango:DejaVuSansMono Nerd Font 9
+
+	colors {
+        	background  #141414
+	        statusline  #dddddd
+	        separator   #666666
+	        # class             border  backgr. text
+	        focused_workspace   #2b83a6 #2b83a6 #ffffff
+	        active_workspace    #212121 #212121 #ffffff
+	        inactive_workspace  #212121 #212121 #86888c
+	        urgent_workspace    #d64e4e #d64e4e #ffffff
+	        binding_mode        #229c56 #229c56 #ffffff
+	}
 }
 
 assign [class="Firefox"] $ws2
