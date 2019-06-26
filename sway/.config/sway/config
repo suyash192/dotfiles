@@ -30,7 +30,7 @@ font pango:DejaVuSansMono Nerd Font 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -e fish
+bindsym $mod+Return exec alacritty -e fish
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -94,16 +94,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Terminals &#xf120;"
-set $ws2 "2: Web &#xf269;"
-set $ws3 "3: Code &#xf668;"
-set $ws4 "4: Files &#xf752;"
+set $ws1 "1: Terminals "
+set $ws2 "2: Web "
+set $ws3 "3: Code "
+set $ws4 "4: Files "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9: Media &#xf04b;"
-set $ws10 "10: Torrents &#xf019;"
+set $ws9 "9: Media "
+set $ws10 "10: Torrents "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -193,11 +193,16 @@ bar {
 }
 
 assign [class="Firefox"] $ws2
+assign [class="Pcmanfm"] $ws4
 assign [class="jetbrains-studio"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="Spotify"] $ws9
 assign [class="qBittorrent"] $ws10
 
+# Wallpaper
+output "*" bg ~/Pictures/wallpapers/batman-the-dark-knight-minimal-ac-1600x900.jpg fill
+
 # Auto start apps
+exec redshift
 exec firefox
-exec urxvt -e fish
+exec alacritty -e fish
