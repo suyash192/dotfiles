@@ -165,6 +165,8 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+p exec passmenu --type
 
+bindsym Pause exec ~/shell-scripts/dpms.sh
+
 # class                 border  backgr. text    indicator child_border
 client.focused          #2b83a6 #2b83a6 #ffffff #dddddd   #2b83a6
 client.focused_inactive #212121 #212121 #86888c #292d2e   #5a5a5a
