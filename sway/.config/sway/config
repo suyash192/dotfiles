@@ -208,3 +208,5 @@ output "*" bg ~/Pictures/wallpapers/batman-the-dark-knight-minimal-ac-1600x900.j
 exec redshift
 exec firefox
 exec alacritty -e fish
+exec /usr/lib/kdeconnectd
+exec /usr/bin/kdeconnect-indicator
