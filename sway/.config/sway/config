@@ -194,7 +194,7 @@ bar {
 	}
 }
 
-assign [class="Firefox"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Pcmanfm"] $ws4
 assign [class="jetbrains-studio"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
@@ -202,7 +202,7 @@ assign [class="Spotify"] $ws9
 assign [class="qBittorrent"] $ws10
 
 # Wallpaper
-output "*" bg ~/Pictures/wallpapers/batman-the-dark-knight-minimal-ac-1600x900.jpg fill
+output "*" bg /home/suyash/Pictures/wallpapers/surviving-mars.png fill
 
 # Auto start apps
 exec redshift
