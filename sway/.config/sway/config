@@ -202,6 +202,9 @@ assign [class="jetbrains-idea-ce"] $ws3
 assign [class="Spotify"] $ws9
 assign [class="qBittorrent"] $ws10
 
+# Certain windows don't work the normal way
+for_window [class="Spotify"] move container to workspace $ws9
+
 # Wallpaper
 output "*" bg /home/suyash/Pictures/wallpapers/firewatch.png fill
 
@@ -209,3 +212,4 @@ output "*" bg /home/suyash/Pictures/wallpapers/firewatch.png fill
 exec redshift
 exec firefox
 exec alacritty -e fish
+exec redshift -m wayland
