@@ -208,8 +208,10 @@ for_window [class="Spotify"] move container to workspace $ws9
 # Wallpaper
 output "*" bg /home/suyash/Pictures/wallpapers/firewatch.png fill
 
+# Remove title bar
+default_border pixel 2
+
 # Auto start apps
-exec redshift
 exec firefox
 exec alacritty -e fish
 exec redshift -m wayland
