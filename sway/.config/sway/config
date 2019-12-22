@@ -30,7 +30,7 @@ font pango:DejaVuSansMono Nerd Font 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -e fish
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -197,6 +197,7 @@ bar {
 
 assign [class="firefox"] $ws2
 assign [class="Pcmanfm"] $ws4
+assign [class="dolphin"] $ws4
 assign [class="jetbrains-studio"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="Spotify"] $ws9
@@ -212,6 +213,8 @@ output "*" bg /home/suyash/Pictures/wallpapers/firewatch.png fill
 default_border pixel 2
 
 # Auto start apps
+exec /usr/lib/kdeconnectd
+exec kdeconnect-indicator
 exec firefox
-exec alacritty -e fish
+exec kitty
 exec redshift -m wayland

@@ -30,7 +30,7 @@ font pango:DejaVuSansMono Nerd Font 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -e fish
+bindsym $mod+Return exec alacritty -e fish
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -173,26 +173,28 @@ client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
 client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
 client.background 	#212121
 
+for_window [class="^.*"] border pixel 1
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-	font pango:DejaVuSansMono Nerd Font 9
+# bar {
+#        status_command i3status
+#	font pango:DejaVuSansMono Nerd Font 9
+#
+#	colors {
+#        	background  #141414
+#	        statusline  #dddddd
+#	        separator   #666666
+#	        # class             border  backgr. text
+#	        focused_workspace   #2b83a6 #2b83a6 #ffffff
+#	        active_workspace    #212121 #212121 #ffffff
+#	        inactive_workspace  #212121 #212121 #86888c
+#	        urgent_workspace    #d64e4e #d64e4e #ffffff
+#	        binding_mode        #229c56 #229c56 #ffffff
+#	}
+#}
 
-	colors {
-        	background  #141414
-	        statusline  #dddddd
-	        separator   #666666
-	        # class             border  backgr. text
-	        focused_workspace   #2b83a6 #2b83a6 #ffffff
-	        active_workspace    #212121 #212121 #ffffff
-	        inactive_workspace  #212121 #212121 #86888c
-	        urgent_workspace    #d64e4e #d64e4e #ffffff
-	        binding_mode        #229c56 #229c56 #ffffff
-	}
-}
-
-assign [class="Firefox"] $ws2
+assign [class="firefox"] $ws2
 assign [class="jetbrains-studio"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="Spotify"] $ws9
@@ -200,4 +202,5 @@ assign [class="qBittorrent"] $ws10
 
 # Auto start apps
 exec firefox
-exec urxvt -e fish
+exec alacritty -e fish
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
