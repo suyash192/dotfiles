@@ -30,7 +30,7 @@ font pango:DejaVuSansMono Nerd Font 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -e fish
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -204,5 +204,5 @@ assign [class="qBittorrent"] $ws10
 
 # Auto start apps
 exec firefox
-exec alacritty -e fish
+exec kitty
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
