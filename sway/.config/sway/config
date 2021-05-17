@@ -200,6 +200,7 @@ assign [class="Pcmanfm"] $ws4
 assign [class="dolphin"] $ws4
 assign [class="jetbrains-studio"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
+assign [class="jetbrains-idea"] $ws3
 assign [class="Spotify"] $ws9
 assign [class="qBittorrent"] $ws10
 
